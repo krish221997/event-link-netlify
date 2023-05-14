@@ -3,14 +3,14 @@ import "./App.css";
 import { useSourceEventLink, useDestinationEventLink } from "@event-inc/link";
 
 function App() {
-  const { open, close } = useSourceEventLink({
+  const { open } = useSourceEventLink({
     group: "krish-parekh-01",
     linkTokenEndpoint: "https://some-link-token-endpoint.com",
     baseUrl:
       "https://event-link-frontend-git-development-buildable.vercel.app/",
   });
 
-  const { open: open2, close: close2 } = useDestinationEventLink({
+  const { open: open2 } = useDestinationEventLink({
     group: "krish-parekh-02",
     linkTokenEndpoint: "https://some-link-token-endpoint.com",
     baseUrl:
