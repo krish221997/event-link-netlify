@@ -4,17 +4,20 @@ import { useSourceEventLink, useDestinationEventLink } from "@event-inc/link";
 
 function App() {
   const { open } = useSourceEventLink({
-    group: "krish-parekh-01",
+    onSuccess: (data) => {
+      console.log(data);
+    },
+    
+
+    group: "sandbox demo",
     linkTokenEndpoint: "https://awaresillycareware--krishparekh11.repl.co/create-link-token",
-    baseUrl:
-      "https://event-link-frontend-git-development-buildable.vercel.app/",
+    environment: "sandbox"
   });
 
   const { open: open2 } = useDestinationEventLink({
-    group: "krish-parekh-02",
+    group: "sandbox demo 2",
     linkTokenEndpoint: "https://awaresillycareware--krishparekh11.repl.co/create-link-token",
-    baseUrl:
-      "https://event-link-frontend-git-development-buildable.vercel.app/",
+    "environment": "sandbox"
   });
 
   return (
