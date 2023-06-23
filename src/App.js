@@ -1,7 +1,7 @@
-import { useSourceEventLink, useDestinationEventLink } from "@event-inc/link";
+import { useSource, useDestination } from "@event-inc/link";
 
 function App() {
-  const { open, close } = useSourceEventLink({
+  const { open, close } = useSource({
     group: "sandbox-demo-9",
     linkTokenEndpoint:
       "https://awaresillycareware--krishparekh11.repl.co/create-link-token",
@@ -22,7 +22,7 @@ function App() {
     },
   });
 
-  const { open: open2 } = useDestinationEventLink({
+  const { open: open2 } = useDestination({
     group: "sandbox-demo-10",
     linkTokenEndpoint:
       "https://awaresillycareware--krishparekh11.repl.co/create-link-token",
