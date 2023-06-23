@@ -2,6 +2,7 @@ import { useSource, useDestination } from "@event-inc/link";
 
 function App() {
   const { open, close } = useSource({
+    title: "Hello World",
     group: "sandbox-demo-9",
     linkTokenEndpoint:
       "https://awaresillycareware--krishparekh11.repl.co/create-link-token",
