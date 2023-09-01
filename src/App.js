@@ -1,4 +1,4 @@
-import { useSource, useDestination, useLink } from "@event-inc/link";
+import { useLink } from "@event-inc/link";
 
 function App() {
 
